@@ -1,10 +1,10 @@
-// Primitive Data Types
+// 🤓 Primitive Data Types - Explained with Humor 😆
 
 /*
 +------------+---------------------------+----------------------------+
 | Type       | Description               | Example                    |
 +------------+---------------------------+----------------------------+
-| string     | Text values               | "Hello World!"             |
+| string     | Text values               | "I love JavaScript! ❤️"    |
 +------------+---------------------------+----------------------------+
 | number     | Numbers (integer & float) | 42, 3.14, -10              |
 +------------+---------------------------+----------------------------+
@@ -20,23 +20,23 @@
 +------------+---------------------------+----------------------------+
 */
 
-let str = "Hello"; // string
-let num = 42; // number
-let bigNum = 1234567890123456789n; // bigint
-let isFun = true; // boolean
-let notDefined; // undefined
-let emptyValue = null; // null
-let uniqueId = Symbol("id");
+let message = "I love JavaScript! ❤️"; // string
+let luckyNumber = 42; // number
+let hugeNumber = 1234567890123456789n; // bigint
+let isJavaScriptFun = true; // boolean
+let unknownValue; // undefined
+let nothingHere = null; // null
+// let uniqueKey = Symbol("🔥 Unique Symbol 🔥");
 
-console.log(str);
-console.log(num);
-console.log(bigNum);
-console.log(isFun);
-console.log(notDefined);
-console.log(emptyValue);
-console.log(uniqueId);
+console.log(`📢 Message: ${message}`);
+console.log(`🎲 Lucky Number: ${luckyNumber}`);
+console.log(`🦾 Huge Number: ${hugeNumber}`);
+console.log(`😂 Is JavaScript Fun? ${isJavaScriptFun}`);
+console.log(`🕵️‍♂️ Undefined Value: ${unknownValue}`);
+console.log(`🚫 Null Value: ${nothingHere}`);
+// console.log(`🔑 Unique Symbol Key: ${uniqueKey}`);
 
-// Reference Data Types
+// 🤯 Reference Data Types - More Madness! 🎭
 
 /*
 +------------+--------------------------------+------------------------------+
@@ -44,7 +44,7 @@ console.log(uniqueId);
 +------------+--------------------------------+------------------------------+
 | Object     | Key-value pairs collection     | { name: "John", age: 25 }    |
 +------------+--------------------------------+------------------------------+
-| Array      | Ordered list of values         | [1, 2, 3, 4, 5]              |
+| Array      | Ordered list of values         | ["🍕", "🍔", "🌭"]           |
 +------------+--------------------------------+------------------------------+
 | Function   | Reusable block of code         | function() { return "Hi!" }  |
 +------------+--------------------------------+------------------------------+
@@ -58,24 +58,32 @@ console.log(uniqueId);
 +------------+--------------------------------+------------------------------+
 */
 
-let person = {
-  name: "Alice",
+let human = {
+  name: "Bob",
   age: 30,
+  favoriteFood: "🍕",
 }; // object
-let numbers = [10, 20, 30]; // array
-let greet = function () {
-  return "Hello!";
+
+let favoriteFoods = ["🍕", "🍔", "🌭", "🍟", "🍩"]; // array
+
+let tellJoke = function () {
+  return "Why did the JavaScript developer go broke? Because he used VAR instead of LET! 😂";
 }; // function
-let today = new Date(); // date
-let pattern = /\d+/; // RegExp
-let userMap = new Map(); // Map
-userMap.set("id", 101);
+
+let currentDate = new Date(); // date
+
+let regexPattern = /\d+/; // RegExp
+
+let userDetails = new Map(); // Map
+userDetails.set("username", "CoolHacker007");
+userDetails.set("rank", "🔥 JavaScript Master");
+
 let uniqueNumbers = new Set([1, 2, 3, 3, 4, 4, 5, 5]); // Set
 
-console.log(person.name);
-console.log(numbers[1]);
-console.log(greet());
-console.log(today.toDateString());
-console.log(pattern.test("abc123"));
-console.log(userMap);
-console.log(uniqueNumbers);
+console.log(`👨‍🎤 My name is ${human.name}, and I love ${human.favoriteFood}!`);
+console.log(`🍽 Favorite Foods: ${favoriteFoods.join(", ")}`);
+console.log(`😂 ${tellJoke()}`);
+console.log(`📆 Today's Date: ${currentDate.toDateString()}`);
+console.log(`🔍 'abc123' contains a number? ${regexPattern.test("abc123")}`);
+console.log(`🗺 User Details:`, userDetails);
+console.log(`🔢 Unique Numbers Set:`, uniqueNumbers);
